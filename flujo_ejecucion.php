@@ -21,6 +21,12 @@
     dameDatos(); //Llamada a la función
     echo "Este es el segundo mensaje PHP <br>";
 
+    //include("entrega_datos.php"); //incluir archivo externo llamado entrega_datos.php
+
+    //dameMasDatos();// llamada a la función dameMasDatos, esta función está definida dentro del archivo incluido entrega_datos.php
+
+    require("entrega_datos.php");
+    probandoElRequire();
 
     ?>
 
