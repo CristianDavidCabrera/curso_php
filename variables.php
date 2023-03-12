@@ -17,9 +17,9 @@
                         - Se utilizan caracteres normales, sin acentos, ni simbolos extraños.
                         */
         $edad = 38;
-        print "El nombre del usuario es " . $nombre . "<br>"; //Para concatenar se utiliza el punto (.) y se deja un espacio antes y depués del punto.//
+        print "El nombre del usuario es " . $nombre . "<br>";  //Para concatenar se utiliza el punto (.) y se deja un espacio antes y depués del punto.//
         print "La edad del usuario es $edad <br>";
-        print 'La edad del usuario es $edad <br>'; //Las comillas simples arrojan el literal, es decir, imprimen en pantalla exactamente lo escrito en el código.//
+        print 'La edad del usuario es $edad <br>';  //Las comillas simples arrojan el literal, es decir, imprimen en pantalla exactamente lo escrito en el código.//
         echo "El nombre es " . $nombre . " y tiene " . $edad . " años <br>";
         echo $nombre,$edad; /*  echo te permite imprimir variables y expresiones sin tener que concatenar, 
                                 unicamente hay que separar por coma (,) dichas variables o expresiones
