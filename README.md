@@ -8,3 +8,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
 - Video 4: Variables y comentarios.
 - Video 5: Flujo de ejecución, declaración y llamadas de funciones en PHP.
 - Video 6: Ámbito de las variables. Local y global. Falta el superglobal, se verá más adelante cuando veamos los arrays.
+- Video 7: Variables estáticas.
