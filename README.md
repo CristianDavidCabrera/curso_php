@@ -11,3 +11,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
 - Video 7: Variables estáticas.
 - Video 8: Strings. Declaración, asignación, uso de comillas simples y dobles, y carácteres escapados. 
            Uso de las funciones strcmp y strcasecmp para comparar strings. E introducción del condicional if/else.
+- Video 9: Operadores de comparación.
