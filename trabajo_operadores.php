@@ -15,17 +15,6 @@
       border: #666 5px solid;
     }
 
-    .no_validado {
-      font-size: 18px;
-      color: #F00;
-      font-weight: bold;
-    }
-
-    .validado {
-      font-size: 18px;
-      color: #0C3;
-      font-weight: bold;
-    }
   </style>
 </head>
 
