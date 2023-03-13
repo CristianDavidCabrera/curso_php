@@ -32,7 +32,7 @@
 <body>
   <h1>USANDO OPERADORES COMPARACIÓN</h1>
 
-  <form action="" method="post" name="datos_usuario" id="datos_usuario">
+  <form action="validacion.php" method="post" name="datos_usuario" id="datos_usuario">
     <table width="15%" align="center">
       <tr>
         <td>Nombre:</td>
@@ -55,23 +55,6 @@
       </tr>
     </table>
   </form>
-
-  <?php
-
-    if (isset($_POST["enviando"])) { /* esta función comprueba si hemos pulsado el botón enviar del formulario  */
-
-      $usuario = $_POST["nombre_usuario"];
-      $edad = $_POST["edad_usuario"];
-
-      if ($usuario == "Juan" && $edad >= 18) {
-        echo "<p class=\"validado\">Puedes entrar</p>";
-      } else {
-        echo "<p class=\"no_validado\">No puedes entrar<p>";
-      }
-    }
-
-
-  ?>
 
 </body>
 
