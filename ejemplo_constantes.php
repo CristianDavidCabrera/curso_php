@@ -10,7 +10,7 @@
 
 <?php 
 
-    define("AUTOR", "Cristian", false); /* Definición de constantes propias:
+    define("AUTOR", "Cristian", false); /* Definición de constantes propias: define(name, value, case-insensitive);
                                     Para definir una constante en PHP se utiliza la función define. 
                                     La función define tiene 3 argumentos, los dos primeros son obligatorios. 
                                     - El primero es el nombre de la constante, lo escribiremos siempre en mayúsculas, es de tipo string por lo que debe ir entre comillas "" .

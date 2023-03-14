@@ -13,3 +13,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
             Uso de las funciones strcmp y strcasecmp para comparar strings. E introducción del condicional if/else.
 - Video 09: Operadores de comparación. Ejercicio de repaso de todo lo que hemos visto hasta ahora.
 - Video 10: Declaración de constantes propias, uso de las constantes propias y predefinidas, sintaxis y ámbito.
+- Video 11: Operadores matemáticos. Suma, resta, multiplicación, división y módulo.
