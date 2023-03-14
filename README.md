@@ -18,3 +18,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
             y paso por parámetros.
 - Video 13: Operadores matemáticos III. Ejercicio práctico. Uso del include y creación de pedazos de código enlazados entre sí.
             Ampliación del ejercicio anterior operadores incremento y decremento.
+- Video 14: Funciones matemáticas y concepto de casting en PHP. (implicito y explicito).
