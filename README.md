@@ -21,3 +21,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
 - Video 14: Funciones matemáticas y concepto de casting en PHP. (implicito y explicito).
 - Video 15: Usos y diferencias entre los condicionales if y else if.
 - Video 16: Operador ternario.
+- video 17: Estructura switch case.
