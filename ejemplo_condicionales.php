@@ -41,9 +41,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Edad:</td>
-                <td><label for="edad_usuario"></label>
-                    <input type="text" name="edad_usuario" id="edad_usuario">
+                <td>Contraseña:</td>
+                <td><label for="password"></label>
+                    <input type="text" name="password" id="password">
                 </td>
             </tr>
             <tr>

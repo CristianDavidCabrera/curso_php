@@ -27,7 +27,8 @@
 if (isset($_POST["enviando"])) {
 
     $usuario = $_POST["nombre_usuario"];
-    $edad = $_POST["edad_usuario"];
+    /* $edad = $_POST["edad_usuario"]; */
+    $pass = $_POST["password"];
 
 
     /*********************************/
@@ -63,8 +64,11 @@ if (isset($_POST["enviando"])) {
         } 
     */
     //El mismo ejemplo con el operador ternario.
-    $resultado = $edad < 18 ? "<p class='no_validado'>Eres menor de edad. No puedes acceder</p>" : "<p class='validado'>Eres mayor de edad. Puedes acceder</p>";
+   /*  $resultado = $edad < 18 ? "<p class='no_validado'>Eres menor de edad. No puedes acceder</p>" : "<p class='validado'>Eres mayor de edad. Puedes acceder</p>";
 
+    echo $resultado; */
+    
+    $resultado = $usuario == "Cristian" && $pass == 7971 ? "<p class='validado'>Acceso permitido</p>" : "<p class='no_validado'>Acceso denegado</p>";
     echo $resultado;
 }
 
