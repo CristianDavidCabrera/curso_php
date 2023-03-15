@@ -22,26 +22,50 @@
     }
 </style>
 
-<?php 
+<?php
 
 if (isset($_POST["enviando"])) {
 
     $usuario = $_POST["nombre_usuario"];
     $edad = $_POST["edad_usuario"];
 
-    if ($edad <= 18) {
-        echo "Eres menor de edad";
-    } else if ($edad <= 40){
-        echo "Eres joven";
-    } else if ($edad <=65){
-        echo "Eres maduro";
-    } else if ($edad <=80){
-        echo "Estás viejo";
-    } else if ($edad <= 85){
-        echo "Estás en el tiempo de descuento";
-    } else {
-        echo "Eres inmortal. Solo puede quedar uno.";
-    }
+
+    /*********************************/
+    /* Video 14 condicional else if  */
+    /*********************************/
+
+    /*     
+        if ($edad <= 18) {
+            echo "Eres menor de edad";
+        } else if ($edad <= 40){
+            echo "Eres joven";
+        } else if ($edad <=65){
+            echo "Eres maduro";
+        } else if ($edad <=80){
+            echo "Estás viejo";
+        } else if ($edad <= 85){
+            echo "Estás en el tiempo de descuento";
+        } else {
+            echo "Eres inmortal. Solo puede quedar uno.";
+        } 
+    */
+
+
+    /*********************************/
+    /*  Video 15 operador ternario   */
+    /*********************************/
+
+    //Ejemplo con un if
+    /*    if($edad < 18){
+            echo "Eres menor de edad. No tienes acceso";
+        } else {
+            echo "Eres mayor de edad. Puedes acceder";
+        } 
+    */
+    //El mismo ejemplo con el operador ternario.
+    $resultado = $edad < 18 ? "<p class='no_validado'>Eres menor de edad. No puedes acceder</p>" : "<p class='validado'>Eres mayor de edad. Puedes acceder</p>";
+
+    echo $resultado;
 }
 
 
