@@ -22,3 +22,4 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
 - Video 15: Usos y diferencias entre los condicionales if y else if.
 - Video 16: Operador ternario.
 - video 17: Estructura switch case.
+- Video 18: Bucles indeterminados. Bucle while y bucle do-while. Sintaxis y diferencias.
