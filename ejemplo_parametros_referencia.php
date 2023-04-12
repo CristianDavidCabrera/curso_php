@@ -20,13 +20,13 @@
     }
 
     $numero = 5;
-    echo("Parámertros por valor <br>");
+    echo ("Parámertros por valor <br>");
     echo incrementarValor($numero) . "<br>";  // esto debe ser 6
     echo $numero . "<br> <br>";               // esto debe ser 5
 
 
     /*********************************************/
-    /*  Ejemplo cuando valor1 es una refernecia  */
+    /*  Ejemplo cuando valor1 es una referencia  */
     /*********************************************/
     function incrementarReferencia(&$valor1)
     {
@@ -35,10 +35,22 @@
     }
 
     $numero = 5;
-    echo("Parámetros por referencia <br>");
+    echo ("Parámetros por referencia <br>");
     echo incrementarReferencia($numero) . "<br>";  // esto debe ser 6
     echo $numero . "<br>";                         // esto debe ser 6
 
+
+    function cambia_mayuscula(&$param)
+    {
+        $param = strtolower($param);
+        $param = ucwords($param);
+        return $param;
+    }
+
+    $cadena = "hOlA mUndO";
+    echo cambia_mayuscula($cadena) . "<br>";
+    echo $cadena . "<br>";
+    
 
     ?>
 </body>
