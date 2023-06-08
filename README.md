@@ -2,9 +2,14 @@ Curso de iniciación a PHP con MySQL.
 
 Se seguirá el orden de los videos desde el primero al último y se realizarán los ejercicios teóricos y prácticos de cada uno de ellos.
 
+Introducción
+
 - Video 01: Presentación.
 - Video 02: Instalación software.
 - Video 03: Primera página PHP.
+
+Sintáxis Básica
+
 - Video 04: Variables y comentarios.
 - Video 05: Flujo de ejecución, declaración y llamadas de funciones en PHP.
 - Video 06: Ámbito de las variables. Local y global. Falta el superglobal, se verá más adelante cuando veamos los arrays.
@@ -26,3 +31,7 @@ Se seguirá el orden de los videos desde el primero al último y se realizarán 
 - Video 19: Bucle determinado. Bucle for. Sintaxis y usos. Intrucción break y continue.
 - Video 20: Funciones. Predefinidas, propias, anidadas. Paso de parámetros y parámetros por defecto.
 - Video 21: Funciones. Paso por parametros. Parametros por defecto o valor y parámetros por referencia.
+
+Programación orientada a objetos (POO)
+
+-Video 22: POO I.
