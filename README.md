@@ -34,4 +34,5 @@ Sintáxis Básica
 
 Programación orientada a objetos (POO)
 
--Video 22: POO I.
+- Video 22: POO I. Creación de clases e instanciacón.
+- Video 23: POO II. Propiedades, métodos, cambio de propiedades, llamadas a métodos, método constructor.
