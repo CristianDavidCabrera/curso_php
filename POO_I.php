@@ -20,6 +20,7 @@
         $pegaso->frenar();
         $pegaso->establecer_color("Azul","Pegaso");
         $mazda->establecer_color("Rojo","Citroen");
+        $pegaso->arrancar();
     ?>
 </body>
 

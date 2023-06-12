@@ -61,6 +61,14 @@
             $this->color = $color_camion;
             echo "El color del " . $nombre_camion . " es " . $this->color . "<br>";
         }
+
+        /* Herencia de un solo método.*/
+        function arrancar()
+        {
+            parent::arrancar(); // Ejecuta el método arrancar de la clase padre o superclase, es decir la clase coche.
+            echo "El camión ya está arrancado."; // Añadimos más instrucciones que se ejecutarán después del método de la superclase.
+        }
+
     }
 
 ?>

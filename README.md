@@ -37,4 +37,4 @@ Programación orientada a objetos (POO)
 - Video 22: POO I. Creación de clases e instanciacón.
 - Video 23: POO II. Propiedades, métodos, cambio de propiedades, llamadas a métodos, método constructor.
 - Video 24: POO III. Paso por parámetros. Reutilización de clases.
-- Video 25: Herencia. Super clases, subclases. Reutilización de código.
+- Video 25: Herencia. Super clases, subclases. Reutilización de código. Parent y sobrescritura de métodos.
