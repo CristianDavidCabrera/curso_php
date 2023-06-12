@@ -16,6 +16,10 @@
 
         echo "El Mazda tiene " . $mazda->ruedas . " ruedas.<br>";
         echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas.<br>";
+        echo "El Pegaso tiene un motor de " .$pegaso->motor . "cc <br>";
+        $pegaso->frenar();
+        $pegaso->establecer_color("Azul","Pegaso");
+        $mazda->establecer_color("Rojo","Citroen");
     ?>
 </body>
 

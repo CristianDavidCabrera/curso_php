@@ -38,26 +38,29 @@
             $this->color = $color_coche;
             echo "El color del " . $nombre_coche . " es " . $this->color . "<br>";
         }
-        
     }
 
 
-/* ------------------------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------------------------ */
 
 
-//Creación de clase camion.
-class Camion extends Coche
-{
-
-    function __construct()
+    //Creación de clase camion.
+    class Camion extends Coche
     {
-        $this->ruedas = 8;
-        $this->color = "gris";
-        $this->motor = 2600;
+
+        function __construct()
+        {
+            $this->ruedas = 8;
+            $this->color = "gris";
+            $this->motor = 2600;
+        }
+
+        /* Sobreescritura de método, se hace para adaptar el método heredado de la superclase a la subclase. */
+        function establecer_color($color_camion, $nombre_camion)
+        {
+            $this->color = $color_camion;
+            echo "El color del " . $nombre_camion . " es " . $this->color . "<br>";
+        }
     }
-    
-}
-
-
 
 ?>
