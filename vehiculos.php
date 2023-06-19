@@ -7,7 +7,7 @@
         //propiedades o atributos de clase. --> qué características tienen.
         protected $ruedas;
         public $color;
-        public $motor;
+        protected $motor;
 
         //Método constructor. Nos da siempre el estado incial de una clase.
         function __construct()
@@ -23,6 +23,10 @@
 
         function get_ruedas(){
             return $this->ruedas;
+        }
+
+        function get_motor(){
+            return $this->motor;
         }
 
 
