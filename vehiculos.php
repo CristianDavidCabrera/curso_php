@@ -5,7 +5,7 @@
     {
 
         //propiedades o atributos de clase. --> qué características tienen.
-        public $ruedas;
+        private $ruedas;
         public $color;
         public $motor;
 
@@ -16,6 +16,15 @@
             $this->color = "";
             $this->motor = 1600;
         }
+
+        //Métodos Getters y Setters. 
+        //Los métodos Setters sirven para modificar las propiedades de los objetos o clases. 
+        //Los métodos Getters sirven para ver u obtener las propiedades de los objetos o clases.
+
+        function get_ruedas(){
+            return $this->ruedas;
+        }
+
 
         //métodos o funcionalidades -->  qué pueden hacer.
         function arrancar()

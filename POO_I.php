@@ -14,13 +14,11 @@
         $mazda = new Coche();
         $pegaso = new Camion();
 
-        echo "El Mazda tiene " . $mazda->ruedas . " ruedas.<br>";
-        echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas.<br>";
-        echo "El Pegaso tiene un motor de " .$pegaso->motor . "cc <br>";
-        $pegaso->frenar();
-        $pegaso->establecer_color("Azul","Pegaso");
-        $mazda->establecer_color("Rojo","Citroen");
-        $pegaso->arrancar();
+        //como acceder a propiedades que están encapsuladas. Métodos Getters y Setters.
+
+        echo("El Mazda tiene " . $mazda->get_ruedas() . " ruedas.<br>");
+
+
     ?>
 </body>
 
