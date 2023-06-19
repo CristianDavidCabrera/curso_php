@@ -17,6 +17,7 @@
         //como acceder a propiedades que están encapsuladas. Métodos Getters y Setters.
 
         echo("El Mazda tiene " . $mazda->get_ruedas() . " ruedas.<br>");
+        echo("El Pegaso tiene " . $pegaso->get_ruedas() . " ruedas.<br>");
 
 
     ?>

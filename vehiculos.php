@@ -5,7 +5,7 @@
     {
 
         //propiedades o atributos de clase. --> qué características tienen.
-        private $ruedas;
+        protected $ruedas;
         public $color;
         public $motor;
 
@@ -65,7 +65,7 @@
         }
 
         /* Sobreescritura de método, se hace para adaptar el método heredado de la superclase a la subclase. */
-        function establecer_color($color_camion, $nombre_camion)
+        function set_color($color_camion, $nombre_camion) //establece color.
         {
             $this->color = $color_camion;
             echo "El color del " . $nombre_camion . " es " . $this->color . "<br>";
