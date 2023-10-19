@@ -19,6 +19,12 @@
         echo("El Mazda tiene " . $mazda->get_ruedas() . " ruedas.<br>");
         echo("El Pegaso tiene " . $pegaso->get_ruedas() . " ruedas.<br>");
         echo("El Mazda tiene un motor de " . $mazda->get_motor() . "cc <br>");
+        echo("El Mazda es de color " . $mazda->get_color() . "<br>");
+        echo("El Pegaso es de color " . $pegaso->get_color() . "<br>");
+
+        echo("El Pegaso: " . $pegaso->arrancar() . "<br>");
+        echo("El Mazda: " . $mazda->arrancar() . "<br>");
+       
 
     ?>
 </body>
