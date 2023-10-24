@@ -39,7 +39,7 @@
 
         function precio_final()
         {
-            return $this->precio_base;
+            return  ("El precio total es de " . $this->precio_base . " euros. <br>");
         }
     }
 
