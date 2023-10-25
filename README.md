@@ -42,3 +42,4 @@ Programación orientada a objetos (POO)
 - Video 27: Modificadores de acceso: public, private y protected. Métodos Getters y Setters.
 - Video 28: Variables y métodos estáticos I.
 - Video 29: Variables y métodos estáticos II.
+- Video 30: Arrays I.
