@@ -45,6 +45,16 @@
         echo "A $clave le corresponde $valor <br>";
     }
 
+    /* Como recorrer un array indexado. Se utiliza un bucle for */
+    for ($i=0; $i<5; $i++){
+        echo($entreSemana[$i] . "<br>");
+
+    }
+    /* Como recorrrer un array indexado cuando no conocemos exactamente cuantos elementos tiene. Utilizando la función predefinida count */
+    for ($i=0; $i<count($entreSemana); $i++){
+        echo($entreSemana[$i] . "<br>");
+
+    }
 
     ?>
 
