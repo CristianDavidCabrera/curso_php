@@ -29,8 +29,13 @@
     /* ARRAYS ASOCIATIVOS O NO INDEXADOS */
 
     $datos = array("Nombre" => "José", "Apellido" => "Rodriguez", "Edad" => 50); //declaración de array asociativo.
-    echo $datos["Nombre"]; //Imprime por pantalla la posición Nombre. Es decir el valor José.
+    echo $datos["Nombre"] . "<br>"; //Imprime por pantalla la posición Nombre. Es decir el valor José.
 
+    if(is_array($datos) == true){ //la función is_array es una función booleana que sirve para comprobar si el parámetro introducido es o no es un array.
+        echo("Es un array");
+    }else{
+        echo("No es un array");
+    }
 
 
 
