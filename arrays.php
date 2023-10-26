@@ -30,14 +30,20 @@
 
     $datos = array("Nombre" => "José", "Apellido" => "Rodriguez", "Edad" => 50); //declaración de array asociativo.
     echo $datos["Nombre"] . "<br>"; //Imprime por pantalla la posición Nombre. Es decir el valor José.
+    /*  $datos ="Juanito"; */
 
-    if(is_array($datos) == true){ //la función is_array es una función booleana que sirve para comprobar si el parámetro introducido es o no es un array.
-        echo("Es un array");
-    }else{
-        echo("No es un array");
+    //la función predefinida is_array es una función booleana que sirve para comprobar si el parámetro introducido es o no es un array.
+    if (is_array($datos) == true) {
+        echo ("Es un array <br>");
+    } else {
+        echo ("No es un array <br>");
     }
 
 
+    /* Como recorrer un array de tipo asociativo. Se utiliza el bucle foreach */
+    foreach ($datos as $clave => $valor) {
+        echo "A $clave le corresponde $valor <br>";
+    }
 
 
     ?>
