@@ -36,6 +36,9 @@
 
         /* Como añadir un elemento más al array indexado. */
         $entreSemana[] = "Sábado";
+        /* Ordenar los elementos del array alfabéticamente, se utiliza la función predefinida sort() */
+        echo("utilizamos las función sort para ordenar alfabeticamente <br><br>");
+        sort($entreSemana);
 
         /* Como recorrrer un array indexado cuando no conocemos exactamente cuantos elementos tiene. Utilizando la función predefinida count */
         for ($i = 0; $i < count($entreSemana); $i++) {
