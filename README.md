@@ -44,4 +44,8 @@ Programación orientada a objetos (POO)
 - Video 29: Variables y métodos estáticos II.
 - Video 30: Arrays I.
 - Video 31: Arrays II.
-- Video 32: 
+- Video 32: Arrays III.
+
+Operaciones con bases de datos (BBDD MySQL)
+
+- Video 33:
