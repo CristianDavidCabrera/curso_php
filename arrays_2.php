@@ -10,26 +10,37 @@
 <body>
     <?php
 
-        /* Declaración de array multidimensional */
-        $alimento = array(
-            "fruta" => array(
-                "tropical" => "kiwi",
-                "citrico" => "mandarina",
-                "otros" => "manzana"
-            ),
-            "leche" => array(
-                "animal" => "vaca",
-                "vegetal" => "coco"
-            ),
-            "carne" => array(
-                "vacuno" => "lomo",
-                "porcino" => "pata"
-            )
-        );
+    /* Declaración de array asociativo multidimensional */
+    $alimentos = array(
+        "fruta" => array(
+            "tropical" => "kiwi",
+            "citrico" => "mandarina",
+            "otros" => "manzana"
+        ),
+        "leche" => array(
+            "animal" => "vaca",
+            "vegetal" => "coco"
+        ),
+        "carne" => array(
+            "vacuno" => "lomo",
+            "porcino" => "pata"
+        )
+    );
 
-        /* Como acceder a un elemento. Ejemplo: acceder al elemento lomo */
+    /* Como acceder a un elemento. Ejemplo: acceder al elemento lomo */
+    /*  echo($alimentos["carne"]["vacuno"]); */
 
-        echo($alimento["carne"]["vacuno"]);
+    /* Como recorrer todo el array multidimensional. */
+
+    foreach($alimentos as $clave_alim=>$alim){ //recorremos primera dimensión.
+        echo "$clave_alim: <br>";
+
+        foreach($alim as $clave => $valor){ //recorremos segunda dimensión. 
+                echo "$clave=$valor <br>";
+        }
+        echo "<br>";
+    }
+
 
     ?>
 </body>
