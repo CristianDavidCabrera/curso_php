@@ -10,37 +10,39 @@
 <body>
     <?php
 
-    /* Declaración de array asociativo multidimensional */
-    $alimentos = array(
-        "fruta" => array(
-            "tropical" => "kiwi",
-            "citrico" => "mandarina",
-            "otros" => "manzana"
-        ),
-        "leche" => array(
-            "animal" => "vaca",
-            "vegetal" => "coco"
-        ),
-        "carne" => array(
-            "vacuno" => "lomo",
-            "porcino" => "pata"
-        )
-    );
+        /* Declaración de array asociativo multidimensional */
+        $alimentos = array(
+            "fruta" => array(
+                "tropical" => "kiwi",
+                "citrico" => "mandarina",
+                "otros" => "manzana"
+            ),
+            "leche" => array(
+                "animal" => "vaca",
+                "vegetal" => "coco"
+            ),
+            "carne" => array(
+                "vacuno" => "lomo",
+                "porcino" => "pata"
+            )
+        );
 
-    /* Como acceder a un elemento. Ejemplo: acceder al elemento lomo */
-    /*  echo($alimentos["carne"]["vacuno"]); */
+        /* Como acceder a un elemento. Ejemplo: acceder al elemento lomo */
+        /*  echo($alimentos["carne"]["vacuno"]); */
 
-    /* Como recorrer todo el array multidimensional. */
+        /* Como recorrer todo el array multidimensional. */
 
-    foreach($alimentos as $clave_alim=>$alim){ //recorremos primera dimensión.
-        echo "$clave_alim: <br>";
+        foreach ($alimentos as $clave_alim => $alim) { //recorremos primera dimensión.
+            echo "$clave_alim: <br>";
 
-        foreach($alim as $clave => $valor){ //recorremos segunda dimensión. 
+            foreach ($alim as $clave => $valor) { //recorremos segunda dimensión. 
                 echo "$clave=$valor <br>";
+            }
+            echo "<br>";
         }
-        echo "<br>";
-    }
 
+        /* funcion var_dump. Se suele utilizar para depurar el código. Se imprimen en pantalla todos los elementos de un array. */
+        echo var_dump($alimentos);
 
     ?>
 </body>
