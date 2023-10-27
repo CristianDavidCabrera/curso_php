@@ -27,6 +27,10 @@
             )
         );
 
+        /* Como acceder a un elemento. Ejemplo: acceder al elemento lomo */
+
+        echo($alimento["carne"]["vacuno"]);
+
     ?>
 </body>
 
