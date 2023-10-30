@@ -48,4 +48,4 @@ Programación orientada a objetos (POO)
 
 Operaciones con bases de datos (BBDD MySQL)
 
-- Video 33:
+- Video 33: PHP/MYSQL. BBDD MYSQL. Cómo conectar con el gestor de BBDD MySql en local utilizando la consola y utilizando PHPMyAdmin. Crear y eliminar bases de datos en local.
