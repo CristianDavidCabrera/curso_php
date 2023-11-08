@@ -1,0 +1,22 @@
+MySQL:
+
+Es un gestor de bases de datos relacionales, multihilo y multiusuario. Y libre!!
+
+Relacional: tiene varias tablas relacionadas entre sí.
+Multihilo: Soporta varios procesos a la vez. Normalmente peticiones.
+Multiusuario: Pueden haber varios usuarios a la vez conectados a esa base de datos, trabajando sobre ella. Pidiendo información o modidicando información de dicha base de datos.
+
+Gestor de base de datos en local---> Se instala y se utiliza en nuestro propio PC. Está destinado para un entorno de pruebas. Una vez terminado se subirá a un servidor ISP.
+Gestor de bases de datos en remoto --> Lo porporcionará nuestro servidor web ISP.
+
+Hay que tener en cuenta que a la hora de conectar nuestra web y nuestra base de datos los parámetros cambiarán en función de si estamos en local o en remoto. 
+
+El acceso al servidor MySQL se puede hacer por consola o 
+por PHPmyAdmin (es una interfaz gráfica que facilita el manejo de dicho servidor)
+
+
+Comandos SQL para usar por consola:
+
+Crear base de datos ---> create database "nombre_de_la_base_de_datos";
+Eliminar base de datos --> drop database "nombre_de_la_base_de_datos";
+Muestra las bases de datos exitentes --> show databases;
