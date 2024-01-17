@@ -52,3 +52,4 @@ Operaciones con bases de datos (BBDD MySQL)
 -Video 34: PHP/MYSQL. Creando y eliminando tablas MYSQL.
 -Video 35: PHP/MYSQL. Modificando tablas con SQL.
 -Video 36: Conectando la web con la BBDD.
+-Video 37: Obteniendo registros de la BBDD.

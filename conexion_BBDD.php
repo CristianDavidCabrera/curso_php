@@ -13,16 +13,25 @@
         $db_usuario="root";
         $db_password="";
 
+        /* -------------------------------------------------------- */
+        /* Conexion a base de datos por procedimientos o funciones */
+        /* -------------------------------------------------------- */
 
-        /* Por procedimientos */
-        $conexion=mysqli_connect($db_host,$db_usuario,$db_password,$db_nombre); /* abrimos conexión con la base de datos "pruebas"*/
-        $query="SELECT * FROM datospersonales"; /*Seleccionamos toda la info de la tabla "datospersonales" */
-        $resultados=mysqli_query($conexion,$query); /*  Tabla virtual donde se almacena toda la info*/
-        $fila=mysqli_fetch_row($resultados); /* Recorre línea a línea la info que hay en la tabla virtual (result o resource o recourse) */
+        $conexion=mysqli_connect($db_host, $db_usuario, $db_password, $db_nombre); /* ABRIMOS conexión con la base de datos "pruebas"  */
 
-        echo $fila[0] . " ";
-        echo $fila[1] . " ";
-        echo $fila[2] . " ";
+
+        $query="SELECT * FROM datospersonales"; /*Seleccionamos toda la info de la tabla "datospersonales" que se encuentra en la bbdd "pruebas" */
+        $resultados=mysqli_query($conexion,$query); /* Tabla virtual donde se almacena toda la info de la query. */
+
+        while($fila=mysqli_fetch_row($resultados)){ /* Recorre línea a línea la info que hay en la tabla virtual llamada resultset o recordset) */
+
+            echo $fila[0] . " ";                    /* Muestra por pantalla el registro */
+            echo $fila[1] . " ";
+            echo $fila[2] . " ";
+            echo "<br>";
+        }
+
+        mysqli_close($conexion); /* CERRAMOS conexión con la base de datos "pruebas"  */
 
 
     ?>
