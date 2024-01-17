@@ -8,10 +8,7 @@
 <body>
     <?php
     
-        $db_host="localhost";
-        $db_nombre="pruebas";
-        $db_usuario="root";
-        $db_password="";
+       require("datos_conexion.php");
 
         /* -------------------------------------------------------- */
         /* Conexion a base de datos por procedimientos o funciones */
@@ -19,6 +16,14 @@
 
         $conexion=mysqli_connect($db_host, $db_usuario, $db_password, $db_nombre); /* ABRIMOS conexión con la base de datos "pruebas"  */
 
+
+
+        // Verificando conexion. Manejo de error en la conexion
+        if (!$conexion) {
+            die("Connexion fallida: " . mysqli_connect_error());
+            }
+            echo "Connexion establecida" . "<br>";
+     
 
         $query="SELECT * FROM datospersonales"; /*Seleccionamos toda la info de la tabla "datospersonales" que se encuentra en la bbdd "pruebas" */
         $resultados=mysqli_query($conexion,$query); /* Tabla virtual donde se almacena toda la info de la query. */
