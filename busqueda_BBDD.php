@@ -31,19 +31,19 @@
         /* -------------------------------------------------------- */
 
     
-        $query="SELECT * FROM vehiculos where itv='falso'"; //filtramos la tabla vehiculos para que nos muestre los que tienen en el campo itv el valor falso
-        $resultados=mysqli_query($conexion,$query); /* Tabla virtual donde se almacena toda la info de la query. */
+        $query="SELECT * FROM vehiculos where itv='falso'"; //filtro
+        $resultados=mysqli_query($conexion,$query); //resulset
 
-        while($fila=mysqli_fetch_row($resultados)){ /* Recorre línea a línea la info que hay en la tabla virtual llamada resultset o recordset) */
+        while($fila=mysqli_fetch_array($resultados, MYSQLI_ASSOC)){ /* Búsqueda. Declaracion de Array asociativo. */
 
             echo "<table><tr><td>";
-            echo $fila[0] . "</td><td> ";                    /* Muestra por pantalla el registro */
-            echo $fila[1] . "</td><td> ";
-            echo $fila[2] . "</td><td> ";
-            echo $fila[3] . "</td><td> ";
-            echo $fila[4] . "</td><td> ";
-            echo $fila[5] . "</td><td> ";
-            echo $fila[6] . "</td><td></tr></table>";
+            echo $fila['MATRICULA'] . "</td><td> ";                    /* Muestra por pantalla el registro */
+            echo $fila['TIPO'] . "</td><td> ";
+            echo $fila['MARCA'] . "</td><td>";
+            echo $fila['IMPORTE'] . "</td><td>";
+            echo $fila['FECHA DE COMPRA'] . "</td><td>";
+            echo $fila['ITV'] . "</td><td>";
+            echo $fila['COLOR'] . "</td><td></tr></table>";
             echo "<br>";
         }
 
