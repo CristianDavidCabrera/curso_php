@@ -54,4 +54,5 @@ Operaciones con bases de datos (BBDD MySQL)
 -Video 36: Conectando la web con la BBDD.
 -Video 37: Obteniendo registros de la BBDD.
 -Video 38: Importación de tablas MySQL, consultas SQL con filtros.
--Video 38: Página de búsqueda I.
+-Video 39: Página de búsqueda I. Funcion mysqli_fetch_array() y comodines SQL (_ y %). 
+-Video 40: Página de búsqueda II.
