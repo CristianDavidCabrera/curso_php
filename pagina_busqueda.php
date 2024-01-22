@@ -35,5 +35,5 @@
         mysqli_close($conexion); /* CERRAMOS conexión con la base de datos "pruebas"  */
 
 
-    ?>
+?>
     
