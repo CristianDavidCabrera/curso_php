@@ -47,7 +47,7 @@
     /*     Insertar registros en la tabla (SQL                 */
     /* --------------------------------------------------------*/
 
-    /*     $consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE, FECHA DE COMPRA, ITV, COLOR, FOTO)"; */
+    /*     $consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE, FECHACOMPRA, ITV, COLOR, FOTO)"; */
 
     $consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE) values ('1039-NNN','FRUGON','VOLSKWAGEN', 55000)";
     $resultados = mysqli_query($conexion, $consulta); //resulset
