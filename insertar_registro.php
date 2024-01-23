@@ -8,7 +8,7 @@ $matricula = $_GET["matricula"];
 $tipo = $_GET["tipo"];
 $marca = $_GET["marca"];
 $importe = $_GET["importe"];
-/* $fechaCompra = $_GET["fechaCompra"]; */
+$fechaCompra = $_GET["fechaCompra"];
 $itv = $_GET["itv"];
 $color = $_GET["color"];
 
@@ -48,9 +48,9 @@ mysqli_set_charset($conexion, "utf8"); //para trabajar con caracteres latinos.
 /*     Insertar registros en la tabla (SQL)                */
 /* --------------------------------------------------------*/
 
-//$consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE, ITV, COLOR) values ('$matricula', '$tipo', '$marca', $importe,'$fechaCompra', '$itv', '$color')";
+$consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, FECHACOMPRA ,IMPORTE, ITV, COLOR) values ('$matricula', '$tipo', '$marca','$fechaCompra', $importe, '$itv', '$color')";
 
-$consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE, ITV, COLOR) values ('$matricula', '$tipo', '$marca', $importe, '$itv', '$color')";
+//$consulta = "INSERT INTO vehiculos (MATRICULA, TIPO, MARCA, IMPORTE, ITV, COLOR) values ('$matricula', '$tipo', '$marca', $importe, '$itv', '$color')";
 $resultados = mysqli_query($conexion, $consulta); //resulset
 
 
@@ -66,7 +66,7 @@ if($resultados==false){
     echo"<table><tr><td>$tipo</td></tr>";
     echo"<table><tr><td>$marca</td></tr>";
     echo"<table><tr><td>$importe</td></tr>";
-/*     echo"<table><tr><td>$fechaCompra</td></tr>"; */
+    echo"<table><tr><td>$fechaCompra</td></tr>";
     echo"<table><tr><td>$itv</td></tr>";
     echo"<table><tr><td>$color</td></tr></table>";
 }
