@@ -30,8 +30,8 @@ body{
 </head>
 
 <body>
-<h1>Registro de Artículos</h1>
-<form name="form1" method="get" action="Insertar_Registro.php">
+<h1>Registro de Vehículos</h1>
+<form name="form1" method="get" action="insertar_registro.php">
   <table border="0" align="center">
     <tr>
       <td>Matrícula</td>
@@ -55,8 +55,8 @@ body{
     </tr>
     <tr>
       <td>Fecha de compra</td>
-      <td><label for="fecha_de_compra"></label>
-      <input type="text" name="fecha_de_compra" id="fecha_de_compra"></td>
+      <td><label for="fechaCompra"></label>
+      <input type="text" name="fechaCompra" id="fechaCompra"></td>
     </tr>
     <tr>
       <td>ITV</td>
