@@ -42,7 +42,7 @@
         echo $fila['TIPO'] . "</td><td> ";
         echo $fila['MARCA'] . "</td><td>";
         echo $fila['IMPORTE'] . "</td><td>";
-        echo $fila['FECHA DE COMPRA'] . "</td><td>";
+        echo $fila['FECHACOMPRA'] . "</td><td>";
         echo $fila['ITV'] . "</td><td>";
         echo $fila['COLOR'] . "</td><td></tr></table>";
         echo "<br>";
