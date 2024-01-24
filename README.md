@@ -57,6 +57,8 @@ Operaciones con bases de datos (BBDD MySQL)
 -Video 39: Página de búsqueda I. Funcion mysqli_fetch_array() y comodines SQL (_ y %). 
 -Video 40: Página de búsqueda II. Filtrado de busqueda con clausula where. Y creacion de formulario para la busqueda.
 -Video 41: Página de búsqueda III. Unificación de archivos de conexión/desconexión, formulario para la busqueda y filtrado.
--Video 42: Insertando registros en BBDD MySQL.
--Video 43: Insertando registros en BBDD MySQL. (INSERT INTO)
--Video 44: Actualizar registros en BBDD MySQL. (UPDATE)
+-Video 42: Insertando registros I en BBDD MySQL.
+-Video 43: Insertando registros II en BBDD MySQL. (INSERT INTO)
+-Video 44: Eliminar registros de BBDD MySQL. (DELETE)
+-Video 45: Actualizar registros en BBDD MySQL. (UPDATE)
+-Video 46: Leer, buscar y actualizar registros de una BBDD MySQL. (No es un CRUD pero se le parece).
