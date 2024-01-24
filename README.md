@@ -58,4 +58,5 @@ Operaciones con bases de datos (BBDD MySQL)
 -Video 40: Página de búsqueda II. Filtrado de busqueda con clausula where. Y creacion de formulario para la busqueda.
 -Video 41: Página de búsqueda III. Unificación de archivos de conexión/desconexión, formulario para la busqueda y filtrado.
 -Video 42: Insertando registros en BBDD MySQL.
--Video 43: Insertando registros en BBDD MySQL.
+-Video 43: Insertando registros en BBDD MySQL. (INSERT INTO)
+-Video 44: Actualizar registros en BBDD MySQL. (UPDATE)
