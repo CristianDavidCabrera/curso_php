@@ -35,7 +35,10 @@
         /*      Filtros de busqueda o consulta                     */
         /* --------------------------------------------------------*/
 
-        $query = "SELECT * FROM PRODUCTOS where CÓDIGOARTÍCULO like '%$labusqueda%'"; //filtro de busqueda con comodines. Paso el parámetro de la función $labusqueda. 
+       // $query = "SELECT * FROM PRODUCTOS where CÓDIGOARTÍCULO like '%$labusqueda%'"; //filtro de busqueda con comodines. Paso el parámetro de la función $labusqueda. 
+        
+       $query = "SELECT * FROM PRODUCTOS where NOMBREARTÍCULO = '$labusqueda'"; 
+       echo "$query <br><br>";
         $resultados = mysqli_query($conexion, $query); //resulset
 
         while ($fila = mysqli_fetch_array($resultados, MYSQLI_ASSOC)) { /* Búsqueda. Declaracion de Array asociativo. */
