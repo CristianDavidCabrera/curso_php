@@ -15,8 +15,8 @@ $conexion = mysqli_connect($db_host, $db_usuario, $db_password, $db_nombre);
 /* -------------------------------------------------------- */
 /*      como evitar la INYECCION SQL                        */
 /* -------------------------------------------------------- */
-/* Para evitar la inyección SQL se utilizan la función mysqli_real_escape_string() o 
-la función mysqli_addslashes() */
+/* Para evitar la inyección SQL se utilizan la función mysqli_real_escape_string() (esta función es mejor) o 
+la función mysqli_addslashes(). Además podemos/debemos usar consultas preparadas. */
 /* 
 $usuario = $_GET["user"];
 $password = $_GET["passwd"]; */
@@ -48,12 +48,26 @@ mysqli_set_charset($conexion, "utf8");
 
 $consulta = "DELETE FROM usuarios where usuario = '$usuario' and contra='$password'";
 
-echo "consulta<br><br>";
+echo "$consulta<br><br>";
 
-if (mysqli_query($conexion, $consulta)){
+
+/* -------------------------------------------------------- */
+/*      MANEJO DE MENSAJES AL USUARIO                       */
+/* -------------------------------------------------------- */
+
+
+/* if (mysqli_query($conexion, $consulta)){
     echo "Baja procesada";
-}
+} */
 
+
+mysqli_query($conexion, $consulta); //ejecutamos la consulta
+if(mysqli_affected_rows($conexion)>0){ //comprobamos si ha habido cambios en los registros de la base de datos. 
+    echo "Baja procesada";
+
+}else{
+    echo "No se ha encontrado registro para eliminar";
+}
 
 /* -------------------------------------------------------- */
 /*      CERRAR Conexion con base de datos                   */
