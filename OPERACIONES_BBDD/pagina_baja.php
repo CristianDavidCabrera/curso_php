@@ -20,12 +20,14 @@ mysqli_set_charset($conexion, "utf8"); //para trabajar con caracteres latinos.
 /*     LOGIN: pedir usuario y contraseña                    */
 /* -------------------------------------------------------- */
 
-$consulta = "DELETE * FROM usuarios where usuario = '$usuario' and contra='$password'";
+$consulta = "DELETE FROM usuarios where usuario = '$usuario' and contra='$password'";
 
 echo "consulta<br><br>";
 
-if (mysqli_query($conexion, $consulta)) {
+if (mysqli_query($conexion, $consulta)){
     echo "Baja procesada";
 }
 
 mysqli_close($conexion); 
+
+?>

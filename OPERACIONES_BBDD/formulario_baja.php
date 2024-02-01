@@ -14,7 +14,7 @@
 
         <label>Usuario:<input type="text" name="user"></label>
         <label>Contraseña:<input type="text" name="passwd"></label>
-        <input type="submit" name="enviado" value="Dar baja">
+        <input type="submit" name="enviado" value="Baja">
 
     </form>
 
