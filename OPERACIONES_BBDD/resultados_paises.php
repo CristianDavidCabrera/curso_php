@@ -41,7 +41,7 @@ if ($ok == false) {
     echo "Error al ejecutar consulta";
 } else {
 /* ---------------------------------------------------------------------------------------- */
-/*       5.- ASOCIAR LAS VARIABLES AL RESULTADO DE LA CONSULTA myysql_stmt_bind_result      */
+/*       5.- ASOCIAR LAS VARIABLES AL RESULTADO DE LA CONSULTA mysqli_stmt_bind_result      */
 /* -----------------------------------------------------------------------------------------*/
     $ok=mysqli_stmt_bind_result($resultado,$codigo,$seccion,$precio,$pais);
     echo "Artículos encontrados: <br><br>";
