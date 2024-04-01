@@ -15,8 +15,12 @@ $conexion = mysqli_connect($db_host, $db_usuario, $db_password, $db_nombre);
 /* -------------------------------------------------------- */
 /*      como evitar la INYECCION SQL                        */
 /* -------------------------------------------------------- */
+
 /* Para evitar la inyección SQL se utilizan la función mysqli_real_escape_string() (esta función es mejor) o 
 la función mysqli_addslashes(). Además podemos/debemos usar consultas preparadas. */
+/* LA funcion mysqli_real_escape_string() NO ADMITE caracteres que extraños ($,%,*, etc...) */
+
+
 /* 
 $usuario = $_GET["user"];
 $password = $_GET["passwd"]; */
@@ -60,6 +64,7 @@ echo "$consulta<br><br>";
     echo "Baja procesada";
 } */
 
+/* Con la funcion mysqli_affected_rows podemos saber si ha habido algún cambio en los registros de la base de datos. (Filas afectadas) */
 
 mysqli_query($conexion, $consulta); //ejecutamos la consulta
 if(mysqli_affected_rows($conexion)>0){ //comprobamos si ha habido cambios en los registros de la base de datos. 
