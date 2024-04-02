@@ -4,6 +4,7 @@ $c_art = $_GET["c_art"];
 $secc = $_GET["secc"];
 $n_art = $_GET["n_art"];
 $pre = $_GET["pre"];
+$fech =$_GET["fech"];
 $imp = $_GET["imp"];
 $p_ori = $_GET["p_ori"];
 
@@ -20,10 +21,10 @@ mysqli_set_charset($conexion, "utf8");
 
 
 /* -------------------------------------------------------- */
-/*       1.- CREAMOS SENTENNCIA SQL CON CIRTERIO ?          */
+/*       1.- CREAMOS SENTENNCIA SQL CON CRITERIO ?          */
 /* -------------------------------------------------------- */
 
-$sql = "INSERT INTO PRODUCTOS (CÓDIGOARTÍCULO, SECCIÓN, NOMBREARTÍCULO, PRECIO, IMPORTADO, PAÍSDEORIGEN) VALUES (?,?,?,?,?,?)";
+$sql = "INSERT INTO PRODUCTOS (CÓDIGOARTÍCULO, SECCIÓN, NOMBREARTÍCULO, PRECIO, FECHA ,IMPORTADO, PAÍSDEORIGEN) VALUES (?,?,?,?,?,?,?)";
 
 /* ------------------------------------------------------------------------ */
 /*       2.- PREPARAMOS LA CONSULTA con la función mysqli_prepare()         */
@@ -35,7 +36,7 @@ $resultado = mysqli_prepare($conexion, $sql);
 /*       3.- UNIR LOS PARÁMETROS con la función mysqli_stmt_bind_param()    */
 /* -------------------------------------------------------------------------*/
 
-$ok = mysqli_stmt_bind_param($resultado, "sssiss", $c_art, $secc, $n_art, $pre, $imp, $p_ori);
+$ok = mysqli_stmt_bind_param($resultado, "sssisss", $c_art, $secc, $n_art, $pre, $fech ,$imp, $p_ori);
 
 /* ------------------------------------------------------------------------ */
 /*       4.- EJECUTAR LA CONSULTA con la función mysqli_stmt_execute()      */
