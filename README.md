@@ -2,6 +2,8 @@ Curso de iniciación a PHP con MySQL.
 
 Se seguirá el orden de los videos desde el primero al último y se realizarán los ejercicios teóricos y prácticos de cada uno de ellos.
 
+MODULO I
+
 Introducción
 
 - Video 01: Presentación.
@@ -66,3 +68,8 @@ Operaciones con bases de datos (BBDD MySQL)
 -Video 48: Inyeccion SQL. Como evitar la inyeccion SQl. Funciones mysqli_real_escape_string() y mysqli_addslashes().
 -Video 49: Inyeccion SQL. Como evitar la inyeccion SQL con consultas preparadas. 
 -Video 50: Consultas preparadas. Insertar registros en una bbdd en MySQL. 
+
+
+MODULO II
+
+-VIDEO 51: Conexión a BBDD con POO.
