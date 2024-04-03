@@ -10,11 +10,27 @@
 <body>
     <?php
 
-    /* ------------------------------- */
-    /*          Conexion PDO           */
-    /* ------------------------------- */
+    /* --------------------------------------- */
+    /*          Manejo de excepciones          */
+    /* --------------------------------------- */
 
-    $base = new PDO('mysql:host=localhost; dbname=pruebas', 'root', '');
+    try {
+
+        /* ------------------------------- */
+        /*          Conexion PDO           */
+        /* ------------------------------- */
+
+        $base = new PDO('mysql:host=localhost; dbname=pruebas', 'root', '');
+
+        echo 'Conexion OK';
+    } catch (Exception $e) {
+
+        die('Error: ' . $e->getMessage());
+    } finally {
+        $base = null; //vaciar la memoria de la conexión
+    }
+
+
 
 
 
