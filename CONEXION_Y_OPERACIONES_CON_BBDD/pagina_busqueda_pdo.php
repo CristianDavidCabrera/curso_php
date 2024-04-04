@@ -10,8 +10,8 @@
 <body>
     <?php
 
-    $busqueda=$_GET["buscar"]; //guardamos el valor que viene del formulario de la otra página.
-
+    $busqueda_sec=$_GET["seccion"]; //guardamos el valor que viene del formulario de la otra página.
+    $busqueda_porig=$_GET["p_orig"]; 
     try {
 
         /* ------------------------------- */
@@ -34,11 +34,11 @@
         /*------------------*/
         /*   CONSULTA SQL   */
         /*------------------*/
-        $sql = "SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE NOMBREARTÍCULO = :n_art";
+        $sql = "SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE SECCIÓN = :SECC AND PAÍSDEORIGEN = :PORIG";
 
         $resultado = $conexion->prepare($sql); // En la variable resultado guardamos un objeto de tipo PDOStatement, que es lo que devuelve el método prepare() del objeto conexión.
 
-        $resultado->execute(array(":n_art"=> $busqueda));
+        $resultado->execute(array(":SECC"=>$busqueda_sec , ":PORIG"=>$busqueda_porig ));
 
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
             echo "Nombre Artículo: " . $registro ['NOMBREARTÍCULO'] . " Sección: " . $registro['SECCIÓN'] . " Precio: " . $registro['PRECIO'] . " País de Origen: " . $registro['PAÍSDEORIGEN'] . "<br>";
