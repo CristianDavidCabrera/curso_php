@@ -72,5 +72,9 @@ Operaciones con bases de datos (BBDD MySQL)
 
 MODULO II
 
--VIDEO 51: Conexión a BBDD con POO.
--VIDEO 52: Conexion a BBDD con PDO.
+-Video 51: Conexión a BBDD con POO.
+
+Libreria PDO
+
+-Video 52: Conexion a BBDD con PDO.
+-Video 53: Consultas preparadas con PDO.
