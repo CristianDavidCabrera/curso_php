@@ -10,6 +10,8 @@
 <body>
     <?php
 
+    $busqueda=$_GET["buscar"]; //guardamos el valor que viene del formulario de la otra página.
+
     try {
 
         /* ------------------------------- */
@@ -36,7 +38,7 @@
 
         $resultado = $conexion->prepare($sql); // En la variable resultado guardamos un objeto de tipo PDOStatement, que es lo que devuelve el método prepare() del objeto conexión.
 
-        $resultado->execute(array("Destornillador"));
+        $resultado->execute(array($busqueda));
 
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
             echo "Nombre Artículo: " . $registro ['NOMBREARTÍCULO'] . " Sección: " . $registro['SECCIÓN'] . " Precio: " . $registro['PRECIO'] . " País de Origen: " . $registro['PAÍSDEORIGEN'] . "<br>";
