@@ -34,11 +34,11 @@
         /*------------------*/
         /*   CONSULTA SQL   */
         /*------------------*/
-        $sql = "SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE NOMBREARTÍCULO = ?";
+        $sql = "SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE NOMBREARTÍCULO = :n_art";
 
         $resultado = $conexion->prepare($sql); // En la variable resultado guardamos un objeto de tipo PDOStatement, que es lo que devuelve el método prepare() del objeto conexión.
 
-        $resultado->execute(array($busqueda));
+        $resultado->execute(array(":n_art"=> $busqueda));
 
         while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
             echo "Nombre Artículo: " . $registro ['NOMBREARTÍCULO'] . " Sección: " . $registro['SECCIÓN'] . " Precio: " . $registro['PRECIO'] . " País de Origen: " . $registro['PAÍSDEORIGEN'] . "<br>";
