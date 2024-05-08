@@ -80,3 +80,4 @@ Libreria PDO
 -Video 53: Consultas preparadas con PDO.
 -Video 54: Marcadores en consultas preparadas.
 -Video 55: Diferencias entre GET y POST. Y manejo de errores.
+-Video 56: Insertar y eliminar registros en PDO.
