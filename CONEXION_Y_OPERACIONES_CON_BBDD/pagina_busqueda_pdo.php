@@ -48,6 +48,10 @@
     } catch (Exception $e) {
 
         die('Error: ' . $e->getMessage());
+      //  echo "Código del error " . $e->getCode();
+      //  echo "Línea del error " . $e->getLine();
+
+
     } finally {
         $base = null; //vaciar la memoria de la conexión
     }
