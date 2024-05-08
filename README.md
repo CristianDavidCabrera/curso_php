@@ -81,3 +81,4 @@ Libreria PDO
 -Video 54: Marcadores en consultas preparadas.
 -Video 55: Diferencias entre GET y POST. Y manejo de errores.
 -Video 56: Insertar y eliminar registros en PDO.
+-Video 57 CONEXIÓN a BBDD utilizando POO.
