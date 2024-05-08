@@ -10,8 +10,8 @@
 <body>
     <?php
 
-    $busqueda_sec=$_GET["seccion"]; //guardamos el valor que viene del formulario de la otra página.
-    $busqueda_porig=$_GET["p_orig"]; 
+    $busqueda_sec=$_POST["seccion"]; //guardamos el valor que viene del formulario de la otra página.
+    $busqueda_porig=$_POST["p_orig"]; 
     try {
 
         /* ------------------------------- */

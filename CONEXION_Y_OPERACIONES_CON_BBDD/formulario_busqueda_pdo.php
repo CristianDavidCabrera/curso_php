@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <form action="pagina_busqueda_pdo.php" method="get">
+    <form action="pagina_busqueda_pdo.php" method="POST">
         <table>
             <tr>
                 <td>Sección:<input type="text" name="seccion"></td>

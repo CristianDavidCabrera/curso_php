@@ -79,3 +79,4 @@ Libreria PDO
 -Video 52: Conexion a BBDD con PDO.
 -Video 53: Consultas preparadas con PDO.
 -Video 54: Marcadores en consultas preparadas.
+-Video 55: Ruegos y preguntas.
