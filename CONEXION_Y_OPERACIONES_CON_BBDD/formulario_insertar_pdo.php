@@ -27,7 +27,8 @@
 </head>
 
 <body>
-    <form action="pagina_insertar_pdo.php" method="POST">
+    <!-- <form action="pagina_insertar_pdo.php" method="POST"> -->
+    <form action="pagina_eliminar_pdo.php" method="POST">
         <table>
         <tr>
                 <td>C.Artículo:<input type="text" name="c_art" id="c_art"></td>
