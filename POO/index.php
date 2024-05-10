@@ -2,9 +2,11 @@
 
     require "devuelve_productos.php";
 
-    $productos=new DevuelveProductos();
+    $pais=$_GET["buscar"];
 
-    $array_productos=$productos->get_productos();
+    $productos=new DevuelveProductos();
+    
+    $array_productos=$productos->get_productos($pais);
 
 ?>
 

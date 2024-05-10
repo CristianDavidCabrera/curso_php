@@ -9,8 +9,8 @@
         } 
 
 
-        public function get_productos(){
-            $resultado=$this->conexion_db->query('SELECT * FROM PRODUCTOS');
+        public function get_productos($dato){
+            $resultado=$this->conexion_db->query('SELECT * FROM PRODUCTOS WHERE PAÍSDEORIGEN="'. $dato . '"');
             $productos=$resultado->fetch_all(MYSQLI_ASSOC);
             return $productos; 
         }
