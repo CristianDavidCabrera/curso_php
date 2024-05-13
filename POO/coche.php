@@ -56,16 +56,21 @@
         /*------------------------------------------------------*/
 
         public function __construct(
-            private int $ruedas,
-            private string $color,
-            private int $motor
+            private string $nombre = "",
+            private int $ruedas = 4,
+            private string $color = "",
+            private int $motor = 1200
         ) {
+            /*     $this->nombre = $nombre;
+            $this->ruedas = $ruedas;
+            $this->color = $color;
+            $this->motor = $motor; */
         }
 
         /* ---------------------------- */
         /*  Métodos Getters y Setters.  */
         /* ---------------------------- */
-        
+
         /* Los métodos Setters sirven para modificar las propiedades de los objetos o clases.  */
         /* Los métodos Getters sirven para ver u obtener las propiedades de los objetos o clases. */
 
@@ -73,6 +78,10 @@
         /*--------------------*/
         /*      GETTERS       */
         /*--------------------*/
+        public function getNombre()
+        {
+            return $this->nombre;
+        }
         public function getRuedas()
         {
             return $this->ruedas;
@@ -89,18 +98,22 @@
         /*-----------------*/
         /*     SETTERS     */
         /*-----------------*/
+        public function setNombre($nombre_coche)
+        {
+            $this->nombre = $nombre_coche;
+        }
 
-        public function setRuedas($ruedas)
+        public function setRuedas($ruedas_coche)
         {
-            $this->ruedas = $ruedas;
+            $this->ruedas = $ruedas_coche;
         }
-        public function setColor($color)
+        public function setColor($color_coche)
         {
-            $this->color = $color;
+            $this->color = $color_coche;
         }
-        public function setMotor($motor)
+        public function setMotor($motor_coche)
         {
-            $this->motor = $motor;
+            $this->motor = $motor_coche;
         }
 
 
@@ -126,9 +139,10 @@
         {
 
             $info = "<h1>Información del coche:</h1>";
-            $info .= "Ruedas: " . $this->getRuedas();
-            $info .= "<br/> Color: " . $this->getColor();
-            $info .= "<br/> Motor: " . $this->getMotor();
+            $info .= "Nombre: " . $this->getNombre() . "<br>";
+            $info .= "Ruedas: " . $this->getRuedas() . "<br>";
+            $info .= "Color: " . $this->getColor() . "<br>";
+            $info .= "Motor: " . $this->getMotor() . "<br>";
 
             return $info;
         }
@@ -139,16 +153,28 @@
     /* Objeto. Declaración de instacia. */
     /*----------------------------------*/
 
-    $obj_1 = new Coche("4", "Rojo", "1600"); //Declaracion de instacia e inicialización.
+    $obj_1 = new Coche("Renault", 4, "Rojo", 1600); //Instanciación e inicialización.
+    $obj_2 = new Coche("Citroen", 4, "Gris", 1800);
+    $obj_3 = new Coche("Peugeot", 4, "Azul", 2000);
+    $obj_n = new Coche();
 
-    $obj_2 = new Coche("4", "Verde", "1800");
-    $obj_n = new Coche("4", "Azul", "2000");
 
 
     echo $obj_1->mostrarInfo() . "<br>";
     echo $obj_2->mostrarInfo() . "<br>";
-    echo $obj_n->mostrarInfo() . "<br>";
+    echo $obj_3->mostrarInfo() . "<br>";
 
+    echo "<br><br>";
+    echo "INFO Antes del setter " . $obj_n->mostrarInfo() . "<br>";
+
+
+    $obj_n->setNombre("Toyota");
+    $obj_n->setRuedas(8);
+    $obj_n->setColor("Negro");
+    $obj_n->setMotor(2000);
+
+    echo "<br><br>";
+    echo "INFO Despues del setter " . $obj_n->mostrarInfo() . "<br>";
 
     ?>
 
