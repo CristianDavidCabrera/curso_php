@@ -17,6 +17,32 @@
 
     class Coche
     {
+
+        /*-------------------------------*/
+        /* Características o Propiedades */
+        /*-------------------------------*/
+        
+        var $ruedas; //Propiedad o atributo.
+        var $color;  //Propiedad o atributo.
+        var $motor;  //Propiedad o atributo.
+
+
+        /*-----------------------------------------------*/
+        /* Funcionalidades o Métodos. Qué pueden hacer.  */
+        /*-----------------------------------------------*/
+
+        function arrancar()
+        {
+
+        }
+        function girar()
+        {
+
+        }
+        function frenar()
+        {
+
+        }
     }
 
 
@@ -25,9 +51,9 @@
     /*----------------------------------*/
 
     $obj_1 = new Coche();
-    
+
     $obj_2 = new Coche();
-    
+
     $obj_n = new Coche();
 
     ?>
