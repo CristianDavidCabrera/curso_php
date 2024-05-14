@@ -21,7 +21,7 @@
         /* Tras la actualización de PHP a la version 8, 
        los atributos de clase se crean y se inicializan en el método constructor */
 
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
         /* ------------------------------------------ */
         /* Como se hacía ANTES de la versión PHP 8.0  */
         /* ------------------------------------------ */
@@ -30,23 +30,26 @@
         /* Características o Propiedades */
         /*-------------------------------*/
 
-        /*  private int $ruedas; //Propiedad o atributo.
+        /*  
+        private int $ruedas; //Propiedad o atributo.
         private string $color;  //Propiedad o atributo.
         private int $motor;  //Propiedad o atributo. 
-    */
+        */
 
         /*------------------------------------------------*/
         /* Método constructor. Inicialización de objetos  */
         /*------------------------------------------------*/
 
-        /*  public function __construct()
+        /*  
+        public function __construct()
         {
             $this->ruedas = 4; //la palabara reservada $this hace referencia a la propia clase. En este caso a la clase Coche.
             $this->color = "";
             $this->motor = 1600;
         } 
-    */
+        */
 
+/* --------------------------------------------------------------------------------------------------------------------------------- */
         /* ------------------------------------------------- */
         /*   Como se hace AHORA, desde la versión PHP 8.0    */
         /* ------------------------------------------------- */
@@ -61,10 +64,10 @@
             private string $color = "",
             private int $motor = 1200
         ) {
-            /*     $this->nombre = $nombre;
+            $this->nombre = $nombre;
             $this->ruedas = $ruedas;
             $this->color = $color;
-            $this->motor = $motor; */
+            $this->motor = $motor;
         }
 
         /* ---------------------------- */

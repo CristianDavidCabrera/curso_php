@@ -16,15 +16,22 @@
 
         //como acceder a propiedades que están encapsuladas. Métodos Getters y Setters.
 
-        echo("El Mazda tiene " . $mazda->get_ruedas() . " ruedas.<br>");
-        echo("El Pegaso tiene " . $pegaso->get_ruedas() . " ruedas.<br>");
-        echo("El Mazda tiene un motor de " . $mazda->get_motor() . "cc <br>");
-        echo("El Mazda es de color " . $mazda->get_color() . "<br>");
-        echo("El Pegaso es de color " . $pegaso->get_color() . "<br>");
-
-        echo("El Pegaso: " . $pegaso->arrancar() . "<br>");
-        echo("El Mazda: " . $mazda->arrancar() . "<br>");
+        echo("El Mazda tiene " . $mazda->getRuedas() . " ruedas.<br>");
+        echo("El Mazda tiene un motor de " . $mazda->getMotor() . "cc. <br>");
+        echo("El Mazda es de color " . $mazda->getColor() . ".<br>");
+        echo($mazda->arrancar() . "el Mazda. <br>");
+        echo "<br>";
+        echo "<br>";
        
+        echo "el Pegaso " . $pegaso->frenar() . "<br>";
+        echo("El Pegaso tiene " . $pegaso->getRuedas() . " ruedas.<br>");
+        echo("El Pegaso tiene un motor de " . $pegaso->getMotor() . "cc <br>");
+        echo("El Pegaso es de color " . $pegaso->getColor() . "<br>");
+        echo($pegaso->arrancar() . "<br>");
+
+        echo "<br>";
+        echo "<br>";
+        echo ($pegaso->setColor("Amarillo","Iveco"));
 
     ?>
 </body>
