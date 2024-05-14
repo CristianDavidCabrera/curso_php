@@ -51,6 +51,26 @@
             return $this->motor;
         }
 
+        /*-----------------*/
+        /*     SETTERS     */
+        /*-----------------*/
+
+        public function setRuedas($ruedas_coche)
+        {
+            $this->ruedas = $ruedas_coche;
+        }
+
+        function setColor($color_coche, $nombre_coche)
+        {
+            $this->color = $color_coche;
+            echo "El color del " . $nombre_coche . " es " . $this->color . "<br>";
+        }
+
+        public function setMotor($motor_coche)
+        {
+            $this->motor = $motor_coche;
+        }
+
         /*--------------------------*/
         /*   Métodos o funciones    */
         /*--------------------------*/
@@ -70,11 +90,7 @@
             echo "Está frenando ";
         }
 
-        function setColor($color_coche, $nombre_coche)
-        {
-            $this->color = $color_coche;
-            echo "El color del " . $nombre_coche . " es " . $this->color . "<br>";
-        }
+     
     }
 
 
@@ -105,7 +121,7 @@
         {
             $this->color = $color_camion;
             echo "El color del " . $nombre_camion . " es " . $color_camion . "<br>";
-        }
+        } 
 
         /* Herencia de un solo método.*/
         function arrancar()
